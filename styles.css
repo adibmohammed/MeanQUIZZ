@@ -1,0 +1,95 @@
+@font-face {
+    font-family: ranchers;
+    src: url(./Ranchers-Regular.ttf);
+    font-weight: lighter;
+}
+
+@font-face{
+    font-family: handwriting;
+    src: url(./IndieFlower-Regular.ttf);
+}
+
+
+
+body{
+    font-family: handwriting;
+    text-align: center;
+    width: 800px;
+    height: 1200px;
+    padding: 40px 360px;
+    background-color: white;
+
+}
+
+.disney:hover{
+    background-color: #1c6190;
+    color: yellow;
+    text-decoration: none;
+   
+    
+}
+
+.meaanQuizz{
+    font-family: ranchers;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    color: #1c6190;
+    animation: bounce .3s ease infinite alternate;
+}
+
+.meaanQuizz:hover{
+    animation: bounce .3s ease infinite alternate;
+}
+
+.logo {
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+.go{
+    border: 1px;
+    border-color: #1c6190;
+    border-style: solid;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c6190;
+    color: white;
+    font-weight: bold;
+    /* box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, .2); */
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+   
+}
+.go:hover{
+    background-color: white;
+    
+    transition: background-color 2s;
+    box-shadow: 4px 4px 2px 1px darkturquoise ;
+   
+    border: 3px;
+    
+}
+#start{
+    width: 80px;
+    height: 80px;
+    margin: auto;
+   
+   
+
+}
+
+.section1{
+    margin-bottom: 100px;
+}
+
+.down{
+    color: white;
+}
+
+.down:hover{
+    color: rgba(240, 46, 170, 0.9);
+}
+
+
