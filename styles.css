@@ -15,7 +15,7 @@ body{
     font-family: handwriting;
     text-align: center;
     width: 800px;
-    height: 1200px;
+    height: 1800px;
     padding: 40px 360px;
     background-color: white;
 
@@ -75,6 +75,7 @@ body{
     width: 80px;
     height: 80px;
     margin: auto;
+    margin-bottom: 200px;
    
    
 
@@ -92,4 +93,117 @@ body{
     color: rgba(240, 46, 170, 0.9);
 }
 
+#quizz{
+    padding-top: 100px;
+    text-align: center;
+}
 
+#empty{
+    height: 100px;
+}
+
+.central{
+    background-color: darkturquoise;
+    height: 50px;
+    width: 650px;
+    position: absolute;
+   
+}
+
+
+
+#navigation{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-logo{
+    width: 200px;
+    height: 200px;
+}
+
+.reactions{
+    border: solid 1px grey;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 500px;
+    height: 200px;
+    margin-left: 150px;
+    margin-right: 150px;
+
+}
+
+.questions{
+    border: solid 1px red;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 500px;
+    height: 200px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.answer1{
+    border: solid 1px steelblue;
+    height: 20px;
+    width: 50%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+
+}
+
+.answer2{
+    border: solid 1px steelblue;
+    height: 20px;
+    width: 50%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+
+}
+
+.answer3{
+    border: solid 1px steelblue;
+    height: 20px;
+    width: 50%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+
+}
+
+.answer4{
+    border: solid 1px steelblue;
+    height: 20px;
+    width: 50%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+
+}
+
+#answers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+    
+}
+
+.flex-buttons1{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    
+}
+
+.flex-buttons2{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.answer1, .answer2, .answer3, .answer4{
+    background-color: darkturquoise;
+}
