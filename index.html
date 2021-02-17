@@ -13,42 +13,68 @@
         <img src="./logo.png" alt="logo" class="logo">
     </head>
 
+    <!-- <section id="quest-base" class="hidden"> -->
+
+    </section>
+
     <section class="section1"> 
         <h1>Welcome to <span class="meaanQuizz" >meaanQuizz</span>, the place where you learn by getting your feelings hurt.</h1>
-        <h3>Please, if you're a crybaby, here's a <span class="disney"><a href="https://www.disneylandparis.com/fr-fr/" target="_blank" class="disney">useful link.</a></span>  Go play hide and seek... or whatever.</h3>
+        <h3>Disclaimer : please, if you're a crybaby, here's a <span class="disney"><a href="https://www.disneylandparis.com/fr-fr/" target="_blank" class="disney">useful link.</a></span>  Go play hide and seek... or whatever.</h3>
 
     </section>
     <section id="start">
-        <div class="go"> <a href="#quizz" style="text-decoration: none;" class="down">Make me cry</a> </div>
+        <div id = "go"> <a href="#quizz" style="text-decoration: none;" id = "down">Make me cry</a> </div>
     </section>
    
     <section id="quizz">
-        <nav id="navigation">
-            <div class="central"></div>
-        </nav>
+       
         
-        <div class="reactions"></div>
-        <div class="questions"></div>
+       
+        <div id="questions-select" class="questions-grid">
+            <div id="react" class="reactions"></div>
+           <div>
+            <button id="question1">Question1</button>
+            <button id="question2">Question2</button>
+            <button id="question3">Question3</button>
+            <button id="question4">Question4</button>
+            <button id="question5">Question5</button>
+            <button id="question6">Question6</button>
+            <button id="question7">Question7</button>
+            <button id="question8">Question8</button>
+            <button id="question9">Question9</button>
+            <button id="question10">Question10</button>
+          
+           </div>
+         
+            
+        </div>
+        <div id = "ask" class="questions"></div>
+            
+        </div>
 
         <div id="answers">
 
             <div class="flex-buttons1">
-                <div class="answer1"></div>
-                <div class="answer2"></div>
+               <button id="ans1" class="answer1"></button>
+               <button id="ans2" class="answer2"></button>
             </div>
 
             <div class="flex-buttons2">
-                <div class="answer3"></div>
-                <div class="answer4"></div>
+                <button id="ans3" class="answer3"></button> 
+                <button id="ans4" class="answer4"></button>
             </div>
-            
-           
             
             
         </div>
+        <div class="next" id="next-box">
+            <button id="next">Next</button> 
+        </div>
+
+
+       
         
     </section>
       
-   
+   <script type="module" src="./index.js"></script>
 </body>
 </html>

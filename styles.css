@@ -15,12 +15,15 @@ body{
     font-family: handwriting;
     text-align: center;
     width: 800px;
-    height: 1800px;
+    height: 1400px;
     padding: 40px 360px;
     background-color: white;
 
 }
 
+.hidden{
+    display: none;
+}
 .disney:hover{
     background-color: #1c6190;
     color: yellow;
@@ -44,7 +47,7 @@ body{
     box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
 }
 
-.go{
+#go{
     border: 1px;
     border-color: #1c6190;
     border-style: solid;
@@ -62,7 +65,7 @@ body{
     box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
    
 }
-.go:hover{
+#go:hover{
     background-color: white;
     
     transition: background-color 2s;
@@ -75,7 +78,7 @@ body{
     width: 80px;
     height: 80px;
     margin: auto;
-    margin-bottom: 200px;
+    margin-bottom: 80px;
    
    
 
@@ -85,11 +88,11 @@ body{
     margin-bottom: 100px;
 }
 
-.down{
+#down{
     color: white;
 }
 
-.down:hover{
+#down:hover{
     color: rgba(240, 46, 170, 0.9);
 }
 
@@ -101,15 +104,6 @@ body{
 #empty{
     height: 100px;
 }
-
-.central{
-    background-color: darkturquoise;
-    height: 50px;
-    width: 650px;
-    position: absolute;
-   
-}
-
 
 
 #navigation{
@@ -124,8 +118,8 @@ body{
 
 .reactions{
     border: solid 1px grey;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 40px;
+    margin-bottom: 20px;
     width: 500px;
     height: 200px;
     margin-left: 150px;
@@ -135,7 +129,7 @@ body{
 
 .questions{
     border: solid 1px red;
-    margin-top: 100px;
+    margin-top: 20px;
     margin-bottom: 50px;
     width: 500px;
     height: 200px;
@@ -145,7 +139,7 @@ body{
 
 .answer1{
     border: solid 1px steelblue;
-    height: 20px;
+    height: 30px;
     width: 50%;
     border-radius: 8px;
     margin-bottom: 10px;
@@ -154,7 +148,7 @@ body{
 
 .answer2{
     border: solid 1px steelblue;
-    height: 20px;
+    height: 30px;
     width: 50%;
     border-radius: 8px;
     margin-bottom: 10px;
@@ -163,7 +157,7 @@ body{
 
 .answer3{
     border: solid 1px steelblue;
-    height: 20px;
+    height: 30px;
     width: 50%;
     border-radius: 8px;
     margin-bottom: 10px;
@@ -172,7 +166,7 @@ body{
 
 .answer4{
     border: solid 1px steelblue;
-    height: 20px;
+    height: 30px;
     width: 50%;
     border-radius: 8px;
     margin-bottom: 10px;
@@ -206,4 +200,36 @@ body{
 
 .answer1, .answer2, .answer3, .answer4{
     background-color: darkturquoise;
+}
+
+.score{
+    height: 20px;
+    position: relative;
+    text-align: center;
+    border: 1px solid dodgerblue;
+    width: 20%;
+}
+
+.score-board{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#questions-select{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+#questions-select button{
+    height: 20px;
+    width: 80px;
+}
+
+.questions-grid{
+    display: grid;
+    grid-template-columns: 70% 30%;
+
 }
