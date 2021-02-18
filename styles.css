@@ -17,8 +17,13 @@ body{
     width: 800px;
     height: 1400px;
     padding: 40px 360px;
-    background-color: white;
+    background: linear-gradient(#1f4037, #99f2c8);
 
+}
+
+.container{
+    background-color:  #FFFFFF;
+   
 }
 
 .hidden{
