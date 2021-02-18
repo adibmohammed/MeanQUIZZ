@@ -139,16 +139,15 @@ const answer2 = document.getElementById("ans2");
 const answer3 = document.getElementById("ans3");
 const answer4 = document.getElementById("ans4");
 
-const a1 = document.getElementsByClassName("answer1")
-const a2 = document.getElementsByClassName("answer2")
-const a3 = document.getElementsByClassName("answer3")
-const a4 = document.getElementsByClassName("answer4")
+
 
 const score = document.getElementById("scoreboard")
 
 const nextBox = document.getElementsByClassName("next");
 
 const nextQuest = document.getElementById("next");
+
+
 
 const reactionBox = document.getElementById("react");
 const questBox = document.getElementById("ask");
@@ -170,6 +169,8 @@ function displayQuestion(currentQuest) {
 
 startBtn.addEventListener('click', () => {
     displayQuestion(count - 1);
+    
+
 
     
 })
@@ -185,14 +186,21 @@ nextQuest.addEventListener('click', () => {
     }
     
     else {
-        next.classList.toggle('hidden')
+        nextQuest.classList.toggle('hidden')
     }
 
     reactionBox.innerHTML = "";
+    answer2.classList.remove('hidden');
+    answer3.classList.remove('hidden');
+    answer4.classList.remove('hidden');
+    answer1.classList.remove('hidden');
 })
 
 
+
 answer1.addEventListener('click', () => {
+
+
     if(questBox.innerHTML === "How many different combinations does a Rubix cube have?"){
         reactionBox.innerHTML = "That's an easy one. Good job"
         
@@ -217,10 +225,11 @@ answer1.addEventListener('click', () => {
         reactionBox.innerHTML = "I think it's time for you to hop on TikTok. Trivia is clearly not for you."
     }
     scoreCalc();
+
+    answer2.classList.toggle('hidden');
+    answer3.classList.toggle('hidden');
+    answer4.classList.toggle('hidden');
     
-    a2.classList.toggle('hidden');
-    a3.classList.toggle('hidden');
-    a4.classList.toggle('hidden');
 })
 
 answer2.addEventListener('click', () => {
@@ -247,9 +256,10 @@ answer2.addEventListener('click', () => {
     }
     scoreCalc();
 
-    a1.classList.toggle('hidden');
-    a3.classList.toggle('hidden');
-    a4.classList.toggle('hidden');
+    answer1.classList.toggle('hidden');
+    answer2.classList.toggle('hidden');
+    answer3.classList.toggle('hidden');
+    
 })
 
 answer3.addEventListener('click', () => {
@@ -275,10 +285,10 @@ answer3.addEventListener('click', () => {
         reactionBox.innerHTML = `${questionsArray[9].answer[0].goodReaction}`
     }
     scoreCalc();
-    a2.classList.toggle('hidden');
-    a1.classList.toggle('hidden');
-    a4.classList.toggle('hidden');
-
+  
+    answer1.classList.toggle('hidden');
+    answer2.classList.toggle('hidden');
+    answer4.classList.toggle('hidden');
 })
 
 answer4.addEventListener('click', () => {
@@ -306,9 +316,11 @@ answer4.addEventListener('click', () => {
 
    scoreCalc();
 
-   a2.classList.toggle('hidden');
-   a3.classList.toggle('hidden');
-   a1.classList.toggle('hidden');
+    answer1.classList.toggle('hidden');
+    answer2.classList.toggle('hidden');
+    answer3.classList.toggle('hidden');
+
+  
 })
 
 let totalScore = 0;
@@ -316,7 +328,11 @@ function scoreCalc(){
     if (reactionBox.innerHTML === "That's an easy one. Good job" || reactionBox.innerHTML === "Oh wow you're so smart. We'lle see about that." || reactionBox.innerHTML === "Go go go. You can do it." || reactionBox.innerHTML === "I knew you had it in you. Let's move to the next one" || reactionBox.innerHTML === "Macron is proud of you." || reactionBox.innerHTML === "That was quick. Do you want a cookie?" || reactionBox.innerHTML === "I'm seriously clapping for you right now. I wish you could see me but my creator is aweful at JavaScript" || reactionBox.innerHTML === "You're the real MVP." || reactionBox.innerHTML === "I'm literally crying of pride" || reactionBox.innerHTML === "You are the reason AI will never beat human beings."){
         
         score.innerHTML = `${totalScore += 10}`
-    }else score.innerHTML = `${totalScore -= 5}`
+    }else if(score.innerHTML > 0){
+        score.innerHTML = `${totalScore -= 5}`
+    } 
+
+    
 
 }
 
