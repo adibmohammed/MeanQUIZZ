@@ -139,6 +139,11 @@ const answer2 = document.getElementById("ans2");
 const answer3 = document.getElementById("ans3");
 const answer4 = document.getElementById("ans4");
 
+const a1 = document.getElementsByClassName("answer1")
+const a2 = document.getElementsByClassName("answer2")
+const a3 = document.getElementsByClassName("answer3")
+const a4 = document.getElementsByClassName("answer4")
+
 const score = document.getElementById("scoreboard")
 
 const nextBox = document.getElementsByClassName("next");
@@ -172,11 +177,11 @@ startBtn.addEventListener('click', () => {
 let count = 1;
 nextQuest.addEventListener('click', () => {
     
-    if(count < questionsArray.length){
+    if(reactionBox.innerHTML === ""){
+        alert("Please select an answer")
+    }else if(count < questionsArray.length){
         displayQuestion(count);
         count += 1;
-    }else if(reactionBox.innerHTML === ""){
-        alert("Please select an answer")
     }
     
     else {
@@ -212,6 +217,10 @@ answer1.addEventListener('click', () => {
         reactionBox.innerHTML = "I think it's time for you to hop on TikTok. Trivia is clearly not for you."
     }
     scoreCalc();
+    
+    a2.classList.toggle('hidden');
+    a3.classList.toggle('hidden');
+    a4.classList.toggle('hidden');
 })
 
 answer2.addEventListener('click', () => {
@@ -237,6 +246,10 @@ answer2.addEventListener('click', () => {
         reactionBox.innerHTML = `${questionsArray[9].answer[0].badReaction}`
     }
     scoreCalc();
+
+    a1.classList.toggle('hidden');
+    a3.classList.toggle('hidden');
+    a4.classList.toggle('hidden');
 })
 
 answer3.addEventListener('click', () => {
@@ -262,6 +275,9 @@ answer3.addEventListener('click', () => {
         reactionBox.innerHTML = `${questionsArray[9].answer[0].goodReaction}`
     }
     scoreCalc();
+    a2.classList.toggle('hidden');
+    a1.classList.toggle('hidden');
+    a4.classList.toggle('hidden');
 
 })
 
@@ -289,6 +305,10 @@ answer4.addEventListener('click', () => {
     }
 
    scoreCalc();
+
+   a2.classList.toggle('hidden');
+   a3.classList.toggle('hidden');
+   a1.classList.toggle('hidden');
 })
 
 let totalScore = 0;
