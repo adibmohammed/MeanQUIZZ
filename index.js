@@ -148,7 +148,7 @@ const answer2 = document.getElementById("ans2");
 const answer3 = document.getElementById("ans3");
 const answer4 = document.getElementById("ans4");
 
-const nextBox = document.getElementById("next-box");
+const nextBox = document.getElementsByClassName("next");
 
 const nextQuest = document.getElementById("next");
 
@@ -177,10 +177,16 @@ function displayQuestion(currentQuest) {
 let count = 0;
 nextQuest.addEventListener('click', () => {
     
-    displayQuestion(count);
-    count += 1;
-})
+    if(count < questionsArray.length){
+        displayQuestion(count);
+        count += 1;
+    }else {
+        next.classList.toggle('hidden')
+    }
+    
 
+    
+})
 
 
 
