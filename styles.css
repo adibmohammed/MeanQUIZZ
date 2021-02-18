@@ -202,15 +202,18 @@ body{
     background-color: darkturquoise;
 }
 
-.score{
+
+
+#scoreboard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 20px;
-    position: relative;
-    text-align: center;
-    border: 1px solid dodgerblue;
-    width: 20%;
+    border: solid 1px black;
+    width: 40%;
 }
 
-.score-board{
+.scorebox{
     display: flex;
     align-items: center;
     justify-content: center;
