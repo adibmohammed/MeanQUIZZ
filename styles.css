@@ -9,6 +9,10 @@
     src: url(./IndieFlower-Regular.ttf);
 }
 
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { }
 
 
 body{
@@ -126,9 +130,12 @@ body{
     margin-top: 40px;
     margin-bottom: 20px;
     width: 500px;
-    height: 200px;
+    height: 80px;
     margin-left: 150px;
     margin-right: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -137,9 +144,12 @@ body{
     margin-top: 20px;
     margin-bottom: 50px;
     width: 500px;
-    height: 200px;
+    height: 80px;
     margin-left: 150px;
     margin-right: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .a{
@@ -215,7 +225,8 @@ body{
     justify-content: center;
     height: 20px;
     border: solid 1px black;
-    width: 40%;
+    width: 10%;
+    box-shadow: burlywood;
 }
 
 .scorebox{
@@ -244,4 +255,13 @@ body{
 
 .hidden{
     display: none;
+}
+
+#next{
+    background: darkblue;
+    color: white;
+    width: 20%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
