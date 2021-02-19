@@ -18,7 +18,7 @@ let questionsArray = [
             {
                 correct: "California",
                 badReaction: "Of all the idiots, in all the idiot villages, in all the idiot worlds. You stand alone, my friend :)",
-                goodReaction: "Oh wow you're so smart. We'lle see about that."
+                goodReaction: "Oh wow you're so smart. We'll see about that."
             }
         ],
         proposition: ["Washington", "Washington, DC", "New York"]
@@ -225,7 +225,7 @@ answer1.addEventListener('click', () => {
         reactionBox.innerHTML = "I think it's time for you to hop on TikTok. Trivia is clearly not for you."
     }
     scoreCalc();
-
+    
     answer2.classList.toggle('hidden');
     answer3.classList.toggle('hidden');
     answer4.classList.toggle('hidden');
@@ -257,8 +257,8 @@ answer2.addEventListener('click', () => {
     scoreCalc();
 
     answer1.classList.toggle('hidden');
-    answer2.classList.toggle('hidden');
     answer3.classList.toggle('hidden');
+    answer4.classList.toggle('hidden');
     
 })
 
@@ -325,7 +325,7 @@ answer4.addEventListener('click', () => {
 
 let totalScore = 0;
 function scoreCalc(){
-    if (reactionBox.innerHTML === "That's an easy one. Good job" || reactionBox.innerHTML === "Oh wow you're so smart. We'lle see about that." || reactionBox.innerHTML === "Go go go. You can do it." || reactionBox.innerHTML === "I knew you had it in you. Let's move to the next one" || reactionBox.innerHTML === "Macron is proud of you." || reactionBox.innerHTML === "That was quick. Do you want a cookie?" || reactionBox.innerHTML === "I'm seriously clapping for you right now. I wish you could see me but my creator is aweful at JavaScript" || reactionBox.innerHTML === "You're the real MVP." || reactionBox.innerHTML === "I'm literally crying of pride" || reactionBox.innerHTML === "You are the reason AI will never beat human beings."){
+    if (reactionBox.innerHTML === "That's an easy one. Good job" || reactionBox.innerHTML === "Oh wow you're so smart. We'll see about that." || reactionBox.innerHTML === "Go go go. You can do it." || reactionBox.innerHTML === "I knew you had it in you. Let's move to the next one" || reactionBox.innerHTML === "Macron is proud of you." || reactionBox.innerHTML === "That was quick. Do you want a cookie?" || reactionBox.innerHTML === "I'm seriously clapping for you right now. I wish you could see me but my creator is aweful at JavaScript" || reactionBox.innerHTML === "You're the real MVP." || reactionBox.innerHTML === "I'm literally crying of pride" || reactionBox.innerHTML === "You are the reason AI will never beat human beings."){
         
         score.innerHTML = `${totalScore += 10}`
     }else if(score.innerHTML > 0){
